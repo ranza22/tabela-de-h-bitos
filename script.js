@@ -1,18 +1,18 @@
 // LISTA
 let habitos = []
 
-// PEGAR ELEMENTOS
+
 let botao = document.getElementById("btnAdicionar")
 let input = document.getElementById("inputHabito")
 let lista = document.getElementById("listaHabitos")
 
-// CARREGAR
+
 let dados = localStorage.getItem("habitos")
 if (dados) {
   habitos = JSON.parse(dados)
 }
 
-// FUNÇÃO PRA PEGAR HOJE
+
 function hoje() {
   return new Date().toLocaleDateString()
 }
@@ -58,10 +58,10 @@ function mostrarHabitos() {
 
       let hojeData = hoje()
 
-      // se já fez hoje, não faz nada
+      
       if (habitos[i].ultimaData === hojeData) return
 
-      // pega ontem
+      
       let ontem = new Date()
       ontem.setDate(ontem.getDate() - 1)
       let ontemData = ontem.toLocaleDateString()
