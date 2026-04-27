@@ -1,4 +1,4 @@
-# tabela-de-habitos
+# tabela de habitos
 
 Projeto de controle de hábitos com JavaScript, com sistema de streak, edição e salvamento no navegador (localStorage).
 Desenvolvido como prática de lógica e manipulação de DOM.
